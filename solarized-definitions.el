@@ -222,6 +222,15 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
         (shadow (,@fg-base01))
         (trailing-whitespace (,@fmt-revr ,@fg-red))
         (vertical-border (,@fg-base0))
+        ;; auto-complete
+        (ac-candidate-face (,@bg-base02 ,@fg-cyan))
+        (ac-selection-face (,@fmt-revr ,@bg-base02 ,@fg-base1))
+        (ac-candidate-mouse-face (,@fg-none ,@bg-base02))
+        (ac-completion-face (,@fg-base1 :underline t))
+        (ac-gtags-candidate-face (,@bg-base02 ,@fg-blue))
+        (ac-gtags-selection-face (,@fmt-revr ,@bg-base02 ,@fg-base1))
+        (ac-yasnippet-candidate-face (,@bg-base02 ,@fg-yellow))
+        (ac-yasnippet-selection-face (,@fmt-revr ,@bg-base02 ,@fg-base1))
         ;; comint
         (comint-highlight-prompt (,@fg-blue))
         ;; company-mode
