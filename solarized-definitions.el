@@ -224,6 +224,16 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
         (vertical-border (,@fg-base0))
         ;; comint
         (comint-highlight-prompt (,@fg-blue))
+        ;; company-mode
+        (company-tooltip (,@bg-base02 ,@fg-cyan))
+        (company-tooltip-selection (,@fmt-revr ,@bg-base02 ,@fg-base1))
+        (company-tooltip-mouse (,@fg-none ,@bg-base02))
+        (company-tooltip-common (,@fg-base1 :underline t))
+        (company-tooltip-common-selection (,@fg-base1 :underline t))
+        (company-scrollbar-fg (,@fg-base03 ,@bg-base0))
+        (company-scrollbar-bg (,@bg-base02 ,@fg-cyan))
+        (company-preview (,@bg-base02 ,@fg-cyan))
+        (company-preview-common (,@fg-base1 :underline t))
         ;; compilation
         (compilation-info (,@fmt-bold ,@fg-green))
         (compilation-warning (,@fmt-bold ,@fg-orange))
